@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header design -->
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                  <i class="fa-solid fa-c"></i>
+                  <div class="logo-text">Chirana Imanjith</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                         <span></span>
+                         <span></span>
+                         <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="img/1705226473943.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input"></span></h5>
+                    <h1>Chirana Imajith</h1>
+                    <p>
+                        Welcome to my web development portfolio! I create dynamic, responsive websites that deliver exceptional user experiences. With expertise in HTML, CSS, JavaScript, and modern frameworks, I bring creativity and precision to every project. Explore my work to see how I turn ideas into interactive web solutions.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest0"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- Footer Section -->
+            <footer>
+                <div class="footer-container">
+                    <span>&copy; 2024 Chirana Imajith. All rights reserved.</span>
+                    <span class="footer-links">
+                        <a href="#">Home</a> |
+                        <a href="#">Portfolio</a> |
+                        <a href="#">Resume</a> |
+                        <a href="#">Blog</a> |
+                        <a href="#">Contact</a>
+                    </span>
+                    <span class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </span>
+                </div>
+            </footer>
+
+      <!-- typed js for typing text effect -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Web Developer","UI/UX Designer","Scouter","Seaman","Photographer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+</body>
+</html>
